@@ -12,7 +12,7 @@ local menusOptions = {
                 value = "sw_" .. commandName .. " printMsg " .. i
             end
             if itemData.openmenu == "command" then
-                value = "sw_" .. itemData.value
+                value = itemData.value
             end
             local displayName = itemData.displayName or itemData.name
             table.insert(options, {displayName, value})
